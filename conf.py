@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Paul Tagliamonte'
-SITENAME = "Paul's Blog"
+SITENAME = "Paul's Hacks"
 SITEURL = 'http://fib.io'
 TIMEZONE = "America/New_York"
 THEME = "fib"
