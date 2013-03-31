@@ -23,6 +23,7 @@ LINKS = (('Blog', 'http://blog.pault.ag'),)
 
 SOCIAL = (('twitter', 'http://twitter.com/paultag'),
           ('music', 'http://rdio.com/people/paultag'),
+          ('google-plus', 'http://gplus.to/paultag'),
 #          ('identica', 'http://identi.ca/paultag'),
           ('github-alt', 'http://github.com/paultag'),)
 
