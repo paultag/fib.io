@@ -1,0 +1,3 @@
+[submodule "code-copies/font-awesome"]
+	path = code-copies/font-awesome
+	url = git://github.com/FortAwesome/Font-Awesome.git

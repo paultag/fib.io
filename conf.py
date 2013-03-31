@@ -22,9 +22,9 @@ CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 LINKS = (('Blog', 'http://blog.pault.ag'),)
 
 SOCIAL = (('twitter', 'http://twitter.com/paultag'),
-          ('lastfm', 'http://lastfm.com/user/paultag'),
-          ('identica', 'http://identi.ca/paultag'),
-          ('github', 'http://github.com/paultag'),)
+          ('music', 'http://rdio.com/people/paultag'),
+#          ('identica', 'http://identi.ca/paultag'),
+          ('github-alt', 'http://github.com/paultag'),)
 
 # global metadata to all the contents
 DEFAULT_METADATA = ()  #(('yeah', 'it is'),)

@@ -15,8 +15,9 @@ build: less resources
 
 
 resources:
-	mkdir -p static/imgs
+	mkdir -p static/imgs static/font
 	cp resources/imgs/* static/imgs
+	cp resources/font/* static/font
 
 
 less:
