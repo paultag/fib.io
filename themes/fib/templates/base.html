@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% block windowtitle %}{{ SITENAME }}{% endblock %}</title>
+    <meta name="description" content="">
+    <meta name="author" content="{{ AUTHOR }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ SITEURL }}/theme/style.css" rel="stylesheet">
+</head>
+<body>
+    {% block content %}{% endblock %}
+
+    {% for title, link in MENUITEMS %}
+        <li><a href="{{ link }}">{{ title }}</a></li>
+    {% endfor %}
+
+    {% if DISPLAY_PAGES_ON_MENU %}
+        {% for page in PAGES %}
+            <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+        {% endfor %}
+    {% endif %}
+
+    <li><a href="{{ SITEURL }}/archives.html">Archives</a>
+    <li><a href="{{ SITEURL }}/tags.html">Tags</a>
+
+    <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" rel="alternate">Atom feed</a></li>
+    {% if FEED_RSS %}
+        <li><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" rel="alternate">RSS feed</a></li>
+    {% endif %}
+
+
+    {% if tags %}
+        <div class="lateral" style="padding: 8px 0;">
+        <h1>Tags</h1>
+            <ul class="nav-list">
+            {% for ta, null in tags %}
+                <li><a href="{{ SITEURL }}/{{ ta.url }}">{{ ta }}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+
+    {% if LINKS %}
+        <div class="lateral" style="padding: 8px 0;">
+        <h1>Links</h1>
+            <ul class="nav-list">
+            {% for name, link in LINKS %}
+                <li><a href="{{ link }}">{{ name }}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+
+    {% if SOCIAL %}
+        <div class="lateral" style="padding: 8px 0;">
+            <ul class="nav-list">
+            {% for name, link in SOCIAL %}
+                <li><a href="{{ link }}">{{ name }}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+    </div>
+</body>
+</html>

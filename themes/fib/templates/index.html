@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+{% block content %}
+
+{% if articles %}
+{% for article in articles_page.object_list %}
+
+    <div class='article'>
+        <div class="content-title">
+            <a href="{{ SITEURL }}/{{ article.url }}"><h1>{{ article.title }}</h1></a>
+            {% include "metadata.html" %}
+        </div>
+
+        <div>{{ article.content }}</div>
+        <hr />
+    </div>
+
+{% endfor %} {# For article #}
+{% endif %} {# If articles #}
+
+{% include 'pagination.html' %}
+{% endblock content %}
+
