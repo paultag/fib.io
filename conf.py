@@ -3,9 +3,9 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Paul Tagliamonte'
 SITENAME = "Paul's Blog"
-SITEURL = 'http://hacks.pault.ag'
+SITEURL = 'http://fib.io'
 TIMEZONE = "America/New_York"
-THEME = "hacks"
+THEME = "fib"
 
 GITHUB_URL = 'http://github.com/paultag/'
 # DISQUS_SITENAME = "blog-notmyidea"
