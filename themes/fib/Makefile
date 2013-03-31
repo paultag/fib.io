@@ -14,3 +14,6 @@ mkstatic:
 less:
 	make -C less
 	mv less/fib.css static/css
+
+
+.PHONY: build clean mkstatic less
