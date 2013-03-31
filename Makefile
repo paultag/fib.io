@@ -1,6 +1,11 @@
 all: build
 
 
+init:
+	git submodule init
+	git submodule update
+
+
 build: render
 
 
