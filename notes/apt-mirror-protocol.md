@@ -31,7 +31,7 @@ You've got three core things to do:
 
   * Pick your mirrors
   * Put them in a public place you can always get to (I use
-    [static.pault.ag](http://static.pault.ag/debian/mirrors.txt).
+    [static.pault.ag](http://static.pault.ag/debian/mirrors.txt).)
   * Configure your `sources.list` to use the mirror.txt file by pointing
     to the text file with the `mirror://` protocol.
 
