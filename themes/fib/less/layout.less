@@ -1,25 +1,14 @@
 /* Copyright (c) Paul Tagliamonte <paultag@debian.org> 2013 under the
  *  terms and conditions of Hy it's self.  */
 
-/*
- *  +-----------------+
- *  |        |        |
- *  |--------+        |
- *  |        |        |
- *  +-----------------+
- *  |        |        |
- *  |        +--------+
- *  |        |        |
- *  +--------+--------+
- */
-
-
 @import "reset.less";
 @import "palette.less";
 @import "grid.less";
 
+
 @width:            90%;
 @nav-height:       130px;
+
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:100);
 @import url(http://fonts.googleapis.com/css?family=Cantarell);
@@ -31,9 +20,11 @@ body {
     color:                                #666666;
 }
 
+
 body, html {
     height: 100%;
 }
+
 
 .container {
     width:                                @width;
@@ -177,21 +168,15 @@ h1, h2, h3, h4 {
 }
 
 
-.footer {
-    .trendy;
-    height:                             200px;
-    border-top:                         1px solid #DDDDDD;
-    margin-top:                         50px;
-}
-
-
 .social {
     .trendy;
-    height:                             100px;
-    line-height:                        100px;
+    height:                             75px;
+    line-height:                        75px;
     background-color:                   #EEEEEE;
     border-top:                         1px solid darken(#EEEEEE, 10%);
     text-align:                         center;
+    margin-top:                         100px;
+
     ul {
         .reset;
         display:                          inline;
@@ -206,4 +191,14 @@ h1, h2, h3, h4 {
             }
         }
     }
+}
+
+
+.copyright {
+    .reset;
+    font-size:                      12px;
+    height:                         40px;
+    background-color:               #EEEEEE;
+    color:                          darken(#EEEEEE, 10%);
+    text-align:                     center;
 }
