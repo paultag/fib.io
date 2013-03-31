@@ -1,9 +1,10 @@
-Title: Using the apt mirror protocol
+Title: apt-mirror
 Date: 2013-03-30 21:32
 Tags: debian, apt
 Category: hacks
-Slug: apt-mirror-protocol
+Slug: apt-mirror
 Author: Paul Tagliamonte
+Summary: Use apt-mirror to select a set of mirrors for Debian.
 
 Abstract
 --------

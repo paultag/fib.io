@@ -16,49 +16,18 @@
 
 @import "reset.less";
 @import "palette.less";
+@import "grid.less";
 
 @width:            90%;
 @nav-height:       130px;
-@cell-height:      200px;
 
-
-.block-center {
-    vertical-align:                   middle;
-    text-align:                       center;
-}
-
-
-.cizzle {
-    width:         50%;
-    .block-center;
-}
-
-
-.blocks {
-    width:             70%;
-    margin-left:       auto;
-    margin-right:      auto;
-
-    .cell {
-        height:        @cell-height;
-        line-height:   @cell-height;
-        .cizzle;
-    }
-
-    .half-cell {
-        height:        (@cell-height / 2);
-        line-height:   (@cell-height / 2);
-        .cizzle;
-    }
-}
-
-
-// @import url(http://fonts.googleapis.com/css?family=Roboto:100);
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
 
 
 body {
     background-color:                     @off-white;
     font-family:                          "URW Gothic L";
+    color:                                #555555;
 }
 
 
@@ -91,6 +60,7 @@ body {
 
 h1, h2, h3, h4 {
     .trendy;
+    font-weight: normal;
 }
 
 
@@ -100,10 +70,10 @@ h1, h2, h3, h4 {
         text-align:                       center;
     }
     h1 {
-        color:                            #888888;
+        color:                            lighten(@sand, 2%);
     }
     h2 {
-        color:                            #BBBBBB;
+        color:                            lighten(@sand, 5%);
     }
 }
 
@@ -116,6 +86,7 @@ h1, h2, h3, h4 {
     color:                                #888888;
 
     h1 {
+        color:                            @baby-blue;
         float:                            left;
         .reset;
     }
@@ -133,7 +104,34 @@ h1, h2, h3, h4 {
             display:                      inline;
             padding-left:                 5px;
             padding-right:                5px;
-
+            a {
+                color:                    #888888;
+                text-decoration:          none;
+            }
+            a:hover {
+                color:                    #333333;
+            }
         }
+    }
+}
+
+
+.hacks {
+    .trendy;
+
+    margin-top:                          50px;
+
+    a {
+        color:                           darken(@baby-blue, 5%);
+        font-size:                       1.6em;
+    }
+
+    .hack {
+        margin:                         3px;
+        border:                         1px solid #DDDDDD;
+        height:                         110px;
+        padding:                        3px;
+        .three;
+        .left;
     }
 }

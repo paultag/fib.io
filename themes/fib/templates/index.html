@@ -1,8 +1,23 @@
 {% extends "base.html" %}
-{% block content_title %}{% endblock %}
+
 {% block content %}
+    <div class="call">
+        <h1>PAUL'S NOTES ON LIFE AND THE UNIVERSE.</h1>
+        <h2>INCLUDING, BUT NOT LIMITED TO HACKS INVOLVING USING
+            DEBIAN, PYTHON AND UNIX.</h2>
+    </div>
 
-index
+    <div class="clear"></div>
 
+    <div class="hacks">
+        {% if articles %}
+            {% for article in articles_page.object_list %}
+                <div class='hack'>
+    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a><br />
+    {{article.summary}}
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
 
 {% endblock content %}

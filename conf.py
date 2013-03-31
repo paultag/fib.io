@@ -7,7 +7,7 @@ SITEURL = 'http://fib.io'
 TIMEZONE = "America/New_York"
 THEME = "fib"
 
-GITHUB_URL = 'http://github.com/paultag/'
+GITHUB_URL = 'git://github.com/paultag/fib.io.git'
 # DISQUS_SITENAME = "blog-notmyidea"
 PDF_GENERATOR = False
 REVERSE_CATEGORY_ORDER = True
