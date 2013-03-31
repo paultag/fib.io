@@ -5,5 +5,12 @@
         <h1>{{ article.title }}</h1>
         <div class="clear" ></div>
         <div>{{ article.content }}</div>
+<!--
+        <div>
+{% if article.github %}
+    You can take a look at this code at <a href="{{article.github}}" >GitHub</a>
+{% endif %}
+        </div>
+-->
     </div>
 {% endblock %}

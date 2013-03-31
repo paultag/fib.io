@@ -5,4 +5,5 @@ Category: hacks
 Slug: hy
 Author: Paul Tagliamonte
 Summary: How I implemented the Hy lisp variant.
+GitHub: https://github.com/paultag/hy/
 
