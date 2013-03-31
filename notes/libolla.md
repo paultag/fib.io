@@ -14,7 +14,7 @@ Typing domain names sucks. I hate having to type `debian.org` all the time, when
 something like `d.o` is what we use in casual conversation. As a result, I've
 hacked up a small library, to be `LD_PRELOAD`ed that allows for such domains.
 I've called this library `libolla`, both a fitting name and a nod to my
-[alma mater](http://jcu.edu/).
+[alma mater](http://en.wikipedia.org/wiki/John_Carroll_University).
 
 
 Implementation
