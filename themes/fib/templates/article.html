@@ -1,4 +1,9 @@
 {% extends "base.html" %}
+
 {% block content %}
-article view
+    <div class='article'>
+        <h1>{{ article.title }}</h1>
+        <div class="clear" ></div>
+        <div>{{ article.content }}</div>
+    </div>
 {% endblock %}

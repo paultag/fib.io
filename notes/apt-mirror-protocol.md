@@ -47,9 +47,9 @@ Problems
 
 `update-command-not-found` will blow up like:
 
-W: Don't know how to handle mirror
-W: Don't know how to handle mirror
-W: Don't know how to handle mirror
-W: Don't know how to handle mirror
-W: Don't know how to handle mirror
-W: Don't know how to handle mirror
+    W: Don't know how to handle mirror
+    W: Don't know how to handle mirror
+    W: Don't know how to handle mirror
+    W: Don't know how to handle mirror
+    W: Don't know how to handle mirror
+    W: Don't know how to handle mirror

@@ -22,12 +22,13 @@
 @nav-height:       130px;
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:100);
+@import url(http://fonts.googleapis.com/css?family=Cantarell);
 
 
 body {
     background-color:                     @off-white;
-    font-family:                          "URW Gothic L";
-    color:                                #555555;
+    font-family:                          "Cantarell";
+    color:                                #666666;
 }
 
 
@@ -115,6 +116,33 @@ h1, h2, h3, h4 {
     }
 }
 
+.article {
+    h1 {
+        float:                           right;
+    }
+
+    code {
+        background-color:                darken(@off-white, 2%);
+        border-radius:                   5px;
+        color:                           #444444;
+    }
+
+    pre {
+        background-color:                darken(@off-white, 10%);
+        border:                          1px solid darken(@off-white, 20%);
+        border-radius:                   5px;
+        padding:                         5px;
+        color:                           #555555;
+    }
+
+    a {
+        color:                           darken(@baby-blue, 5%);
+    }
+
+    ul {
+        list-style-type: circle;
+    }
+}
 
 .hacks {
     .trendy;
