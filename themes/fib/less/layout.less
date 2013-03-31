@@ -2,4 +2,85 @@
  *  terms and conditions of Hy it's self.  */
 
 
+@import "reset.less";
+@import "palette.less";
 
+@width:            90%;
+@nav-height:       130px;
+@cell-height:      200px;
+
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
+
+
+body {
+    background-color:                     @off-white;
+    font-family:                          "URW Gothic L";
+}
+
+
+.container {
+    width:                                @width;
+    margin-left:                          auto;
+    margin-right:                         auto;
+}
+
+
+.clear {
+    clear:                                both;
+}
+
+
+.trendy {
+    font-family:                          "Roboto";
+}
+
+
+h1, h2, h3, h4 {
+    .trendy;
+}
+
+
+.call {
+    h1, h2 {
+        font-size:                        1.3em;
+        text-align:                       center;
+    }
+    h1 {
+        color:                            #888888;
+    }
+    h2 {
+        color:                            #BBBBBB;
+    }
+}
+
+
+.nav {
+    .trendy;
+    line-height:                          @nav-height;
+    border-bottom:                        2px solid #EEEEEE;
+    vertical-align:                       middle;
+    color:                                #888888;
+
+    h1 {
+        float:                            left;
+        .reset;
+    }
+
+    img {
+        vertical-align:                   middle;
+    }
+
+    ul {
+        .reset;
+        float:                            right;
+        display:                          inline;
+        li {
+            .reset;
+            display:                      inline;
+            padding-left:                 5px;
+            padding-right:                5px;
+
+        }
+    }
+}
