@@ -31,6 +31,9 @@ body {
     color:                                #666666;
 }
 
+body, html {
+    height: 100%;
+}
 
 .container {
     width:                                @width;
@@ -79,6 +82,11 @@ h1, h2, h3, h4 {
 }
 
 
+.main {
+    min-height:                           90%;
+}
+
+
 .nav {
     .trendy;
     line-height:                          @nav-height;
@@ -118,6 +126,7 @@ h1, h2, h3, h4 {
         }
     }
 }
+
 
 .article {
     h1 {
@@ -167,11 +176,14 @@ h1, h2, h3, h4 {
     }
 }
 
+
 .footer {
     .trendy;
     height:                             200px;
     border-top:                         1px solid #DDDDDD;
+    margin-top:                         50px;
 }
+
 
 .social {
     .trendy;
