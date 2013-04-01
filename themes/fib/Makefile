@@ -14,10 +14,11 @@ clean:
 build: less resources
 
 
-resources:
+resources: less
 	mkdir -p static/imgs static/font
 	cp resources/imgs/* static/imgs
 	cp resources/font/* static/font
+	cp resources/css/* static/css
 
 
 less:

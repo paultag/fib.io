@@ -32,6 +32,7 @@ Implementation
 I wrote a small script, called `redinvoke` (how I invoke redshift), to be
 started on login, that simply passes the lat/lon to the `redshift` instance.
 
+    :::python
     from sh import redshift
     import json
 

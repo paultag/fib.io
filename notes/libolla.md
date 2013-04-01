@@ -26,6 +26,7 @@ The call is actually a pass-through to the "real" `getaddrinfo` by using
 
 The actual implementation looks a bit like:
 
+    :::c
     int getaddrinfo ( const char * node, const char * service,
         const struct addrinfo * hints, struct addrinfo ** res
     ) {

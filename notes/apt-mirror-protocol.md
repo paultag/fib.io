@@ -47,6 +47,8 @@ Problems
 
 `update-command-not-found` will blow up like:
 
+
+    :::text
     W: Don't know how to handle mirror
     W: Don't know how to handle mirror
     W: Don't know how to handle mirror

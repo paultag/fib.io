@@ -50,6 +50,7 @@ of iterating over the Hy model tree. The compiler class uses decorated methods
 to help divide up the entries in the `HyASTCompiler.compile` method.
 Here's an example:
 
+    :::python
         @builds(HyString)
         def compile_string(self, string):
             return ast.Str(s=str(string), lineno=string.start_line,
@@ -63,6 +64,7 @@ the Hy tree in order, and build up the AST as we iterate through the Hy tree.
 We take the AST from the steps above, and run it through some code that
 looks a bit like:
 
+    :::python
         eval(compile(ast, fpath, "exec"), mod.__dict__)
 
 This evaluates the code object produced from the Python AST (called `ast`)
@@ -86,11 +88,13 @@ the processed code into `sys.modules`.
 
 Look, it's functional!
 
+    :::clojure
     => (max (map (lambda [x] (len x)) ["hi" "my" "name" "is" "paul"]))
     4
 
 And, now, using some [python-sh](http://amoffat.github.com/sh/) voodoo:
 
+    :::clojure
     (import-from sh cat grep)
     (-> (cat "/usr/share/dict/words") (grep "-E" "bro$"))
 
@@ -104,6 +108,7 @@ the virtualenv (`pip install hy`).
 After this is done, you should have access to `hy(1)`, the interactive REPL
 (with some slamn' readline bits).
 
+    :::clojure
     => (print (.join ", " ["Hello" "World"]))
     Hello, World
     => 
