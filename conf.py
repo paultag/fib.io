@@ -25,7 +25,7 @@ SOCIAL = (('twitter', 'http://twitter.com/paultag'),
           ('google-plus', 'http://gplus.to/paultag'),
 #          ('identica', 'http://identi.ca/paultag'),
           ('music', 'http://rdio.com/people/paultag'),
-          ('github-alt', 'http://github.com/paultag'),)
+          ('github-alt', 'http://git.io/paultag'),)
 
 # global metadata to all the contents
 DEFAULT_METADATA = ()  #(('yeah', 'it is'),)
