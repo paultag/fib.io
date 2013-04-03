@@ -23,6 +23,9 @@ body, html {
     height: 100%;
 }
 
+a {
+    color:                           darken(@baby-blue, 5%);
+}
 
 .container {
     width:                                @width;
@@ -51,6 +54,11 @@ body, html {
 }
 
 
+.fancy {
+    font-family:                          "Sacramento";
+}
+
+
 h1, h2, h3, h4 {
     .trendy;
     font-weight: normal;
@@ -58,15 +66,16 @@ h1, h2, h3, h4 {
 
 
 .call {
+    padding-top:                          2em;
     h1, h2 {
-        font-size:                        1.3em;
+        .reset;
+        .trendy;
+        font-size:                        2.2em;
         text-align:                       center;
-    }
-    h1 {
-        color:                            lighten(@sand, 2%);
+        color:                            @sand;
     }
     h2 {
-        color:                            lighten(@sand, 5%);
+        font-size:                        1.8em;
     }
 }
 
@@ -88,7 +97,6 @@ h1, h2, h3, h4 {
 
     h1 {
         a {
-            color:                       @baby-blue;
             float:                       left;
             text-decoration:             none;
         }
@@ -132,7 +140,7 @@ h1, h2, h3, h4 {
     }
 
     pre {
-        background-color:                darken(@off-white, 10%);
+        background-color:                darken(@off-white, 2%);
         border:                          1px solid darken(@off-white, 20%);
         border-radius:                   5px;
         padding:                         5px;
@@ -154,11 +162,11 @@ h1, h2, h3, h4 {
     margin-top:                          50px;
 
     a {
-        color:                           darken(@baby-blue, 5%);
         font-size:                       1.6em;
     }
 
     .hack {
+        color:                          #222222;
         margin:                         3px;
         border:                         1px solid #DDDDDD;
         height:                         110px;

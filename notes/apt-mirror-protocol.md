@@ -1,4 +1,4 @@
-Title: apt-mirror
+Title: apt's mirror://
 Date: 2013-02-23 21:04
 Tags: debian, apt
 Category: hacks
