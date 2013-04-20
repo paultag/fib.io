@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>{% block windowtitle %}{{ SITENAME }}{% endblock %}</title>
         <meta name="description" content="">
-        <meta name="author" content="{{ AUTHOR }}">
+        <meta name="author" content="{% block author %}{{ AUTHOR }}{% endblock %}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="vcs-git" href="{{GITHUB_URL}}" title="fib.io repo" />
         <link href="{{ SITEURL }}/theme/css/fib.css" rel="stylesheet">
