@@ -16,6 +16,10 @@ hacked up a small library, to be `LD_PRELOAD`ed that allows for such domains.
 I've called this library `libolla`, both a fitting name and a nod to my
 [alma mater](http://en.wikipedia.org/wiki/John_Carroll_University).
 
+You can find the source over on [GitHub](https://github.com/paultag/libolla)
+(thanks for pointing out that I forgot a link,
+[XTaran](https://twitter.com/XTaran)!)
+
 
 Implementation
 --------------
