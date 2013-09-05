@@ -23,7 +23,6 @@ theme:
 
 render:
 	$(PELICAN) -o $(PELICAN_OUTPUT) \
-		-m $(PELICAN_FILE_TYPE) \
 		-s $(PELICAN_CONFIG) \
 		-t $(PELICAN_THEME)/$(THEME) \
 		$(PELICAN_CONTENT) \
